@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
-<script src="../bower_components/angular/angular.js"></script>
-<body >
- <h4 id="sweet_header" style="background-color:red">Hola</h4>
- <div >
-	<p>Parrafo 1sss</p>
-	<p>Parrafo 2deder</p>
-	<p>Parrafo 3</p>
- </div>
-	<a href="pr/index.html">Click</a>
-</body>
+<html  ng-app="ui.bootstrap.demo">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+
+</head>
+<body >
+	<header ng-controller="dropdown">	
+		<img src="img/logo.png" class="logo">	
+		<img src="img/icn-apps.png" class="home">
+		<div class="left-divider">
+			<div class="line"></div>
+		</div>	
+		<div class="inicio" uib-dropdown on-toggle="toggled(open)">					
+      		<a href="" uib-dropdown-toggle>
+      			Inicio
+        		<span class="caret triangle"></span>
+      		</a>
+      		<ul class="dropdown-menu" uib-dropdown-menu  >
+        		<li ng-repeat="choice in items">
+          			<a href>{{choice}}</a>
+        		</li>
+      		</ul>      		
+		</div>
+		<div class="gear">
+		    <button class="rounded-rectangle-23"> 
+      			<img src="img/icn-gearsvg.png" >
+      		</button>
+		</div>
+		<div class="username" uib-dropdown >					
+      		<a href="" uib-dropdown-toggle>
+      			User name
+        		<span class="caret triangle"></span>
+      		</a>
+      		<ul class="dropdown-menu" uib-dropdown-menu  >
+        		<li ng-repeat="choice in items">
+          			<a href>{{choice}}</a>
+        		</li>
+      		</ul>      		
+		</div>
+		<div class="right-divider">
+			<div class="line"></div>
+		</div>
+		<div class="exit">
+			<a href="">Salir</a>
+		</div>		
+	</header>
+	<main>
+	</main>
+	<footer>	
+	</footer>
+</body>
 </html>
+<script>
+	angular.module('ui.bootstrap.demo', [ 'ui.bootstrap'])
+			.controller("dropdown",function($scope){
+
+				  $scope.items = [
+					    'Nominas',
+					    'Empleados',
+					    'DIMS',
+					    'Módulo DIMS',
+					    'Ususarios',
+					    'Perfil'
+					  ];
+			});
+
+
+</script>

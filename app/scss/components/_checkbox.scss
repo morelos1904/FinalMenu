@@ -1,0 +1,26 @@
+/****************************************
+Checkbox
+*****************************************/
+input[type="checkbox"] {
+  display: none;
+}
+label{
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  border: 1px solid #cccccc;      /*Borde Caja*/
+  content: "";                    /*Espacio*/
+  display: inline-block;
+  margin: 0 .25em 0 0;
+  vertical-align: top;            /*Align to avoid go up and bottom*/
+  width: 14px;
+  height: 14px;
+}
+input[type="checkbox"]:checked + label:before {
+  background: #3b99fc;
+  color: #ffffff;
+  content: "\2713";
+  text-align: center;
+  font: 10px sans-serif;
+  font-weight: bold;
+}

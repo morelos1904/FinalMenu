@@ -1,0 +1,42 @@
+/****************************************
+BUTTON
+*****************************************/
+button.rounded-rectangle-23{
+	width: 32px;
+  	height: 22px;
+  	border-radius: 2px;
+  	background-image: linear-gradient(to top, #f8f8f8, #fefefe);
+  	border: solid 1px #cccccc;
+}
+button.rounded-rectangle-31{
+  	width: 155px;
+  	height: 31px;
+  	border: 0px;
+  	border-radius: 3px;
+    font-size: $font-size;
+  	@include gradiant-button();	
+  	@include text-button();  	
+  	&:disabled{
+  		@include button-disabled(); 		 					
+  	}
+  	&:active{
+  		background-image:     linear-gradient(to bottom, #000000, #ffffff), 
+                  linear-gradient(#477fe5, #477fe5);
+    background-blend-mode: soft-light, normal; 
+  	}
+}
+button.rounded-rectangle-46{
+  	width: 143px;
+  	height: 46px;
+  	border: 0px;
+    font-size: 16px;
+    border-radius: 3px;
+  	@include gradiant-button();	
+  	@include text-button();
+  	&:disabled{
+  		@include button-disabled(); 		 					
+  	}
+  	&:active{
+  		@include button-active();
+  	}
+}

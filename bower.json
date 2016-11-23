@@ -8,6 +8,8 @@
   "license": "ISC",
   "homepage": "https://github.com/morelos1904/SkeletonProject",
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-switch": "^0.1.1"
   }
 }

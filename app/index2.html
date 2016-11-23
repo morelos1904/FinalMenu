@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html  ng-app="ui.bootstrap.demo">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-ui-switch/angular-ui-switch.css">
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+	<script src="bower_components/angular-ui-switch/angular-ui-switch.js"></script>
+	 <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+
+
+</head>
+<body ng-controller="dropdown">
+
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button class="rounded-rectangle-31" >
+		Cargar  incidencia
+	</button>
+	
+	<button   >
+		Cargar  incidencia
+	</button>
+
+	<button class="rounded-rectangle-46"  >
+		Cargar  incidencia
+	</button>
+<br/><br/><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="eder" placeholder="hola eder" >
+<br/><br/><br/>
+asdfasdfasdfasdfasdfasdfasdf
+
+  <switch id="enabled" name="enabled" ng-model="enabled" class="green"></switch>
+<br/><br/><br/>
+
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ 	<input type="checkbox" id="compu"   value="Bike">
+  	<label for="compu" >asdfasdf</label>
+  
+<br/><br/><br/>
+
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ 	<input type="checkbox" id="vehicle"    value="Bike">
+  	<label for="vehicle" >asdfasdf</label>
+
+<br/><br/><br/>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ 	<input type="checkbox" id="eder"  value="Bike">
+  	<label for="eder" >asdfasdf</label>
+
+<br/><br/><br/>
+ 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sdfasdfasdfasdfasdfasdfasdf
+		<div   class="inicio" uib-dropdown on-toggle="toggled(open)">					
+      		<a href="" uib-dropdown-toggle>
+      			Inicio
+        		<span class="caret triangle"></span>
+      		</a>
+      		<ul class="dropdown-menu" uib-dropdown-menu  >
+        		<li ng-repeat="choice in items">
+          			<a href>{{choice}}</a>
+        		</li>
+      		</ul>      		
+		</div> 		
+</body>
+</html>
+
+
+
+
+
+<script>
+	angular.module('ui.bootstrap.demo', ['uiSwitch' , 'ui.bootstrap'])
+			.controller("dropdown",function($scope){
+					$scope.items = [
+										    'Nominas',
+										    'Empleados',
+										    'DIMS',
+										    'Módulo DIMS',
+										    'Ususarios',
+										    'Perfil'
+										  ];
+			});
+</script>

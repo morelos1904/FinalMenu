@@ -1,0 +1,34 @@
+@mixin nav-header() {
+	font-size: $font-size;
+	font-weight: 600;
+	text-align: left;
+	color: #265380;
+	text-decoration: none;
+}
+@mixin text-button() {
+	font-weight: 500;
+	line-height: 1.07;
+	text-align: center;
+	color: #ffffff;
+}
+@mixin gradiant-button{
+	background-image: 	linear-gradient(to top, #000000, #ffffff),
+  	 					linear-gradient(#477fe5, #477fe5);
+  	background-blend-mode: soft-light, normal;  
+}
+@mixin button-active{
+  		background-image: 		linear-gradient(to bottom, #000000, #ffffff), 
+  								linear-gradient(#477fe5, #477fe5);
+		background-blend-mode: soft-light, normal;  								
+}
+@mixin button-disabled{
+	opacity: 0.5;
+  	background-image: 	linear-gradient(to top, #f8f8f8, #fefefe),
+  		 					linear-gradient(#cad4da, #cad4da); 		 					
+	color: 	#a4a4a4;
+	solid:	solid 1px #d0d5dc;  
+}
+@mixin gradiant-input-event{
+  		background-image: 	linear-gradient(to bottom, #f8f8f8, #fefefe),
+  							linear-gradient(#fafcfd, #fafcfd);
+}

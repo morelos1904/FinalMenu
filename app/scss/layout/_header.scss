@@ -1,0 +1,71 @@
+/****************************************
+HEADER
+*****************************************/
+header{
+	height: $header-height;
+	box-shadow: inset 0px -1px 0 0 $blue-grey-40;
+	.line{
+		background: $color-divider;
+    	width: 1px;
+    	height: 24px;
+	}
+	.logo{
+  		float: left;
+  		padding-left: 20px;
+  		padding-top: $top-padding;
+	}
+	.home{
+		float: left;
+  		padding-top: ($top-padding + 2);
+  		padding-left: 22.9px;
+	}
+	.left-divider{
+		float: left;		
+    	margin-top: ($top-padding - 2);
+    	margin-left: 43px;
+	}
+	.inicio{
+		float: left;	
+		padding-top: ($top-padding + 5);
+    	padding-left: 22px;    	
+    	a{    		
+			@include nav-header(); 
+    	}
+    	.triangle{
+    		margin-left: 185px; 
+    	}
+    	ul{
+    		width:325px;
+    	}    	
+	}
+	.gear{
+		float: left;	
+    	padding-top: ($top-padding - 2);
+    	padding-left: 21px;
+    }
+	.username{
+		float: left;	
+		padding-top: ($top-padding + 1);
+    	padding-left: 649px;
+    	a{    		
+			@include nav-header(); 
+    	}
+    	.triangle{
+    		margin-left: 3px; 
+    	}     	   
+    }
+    .right-divider{
+		float: left;		
+    	margin-top: ($top-padding - 2);
+    	margin-left: 13px;
+	}
+	.exit{
+		float: left;		
+    	margin-top: ($top-padding + 1);
+    	margin-left: 25px;
+    	a{    		
+			@include nav-header(); 
+    	}
+	}     
+}
+

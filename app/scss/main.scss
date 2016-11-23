@@ -1,0 +1,12 @@
+@import 'utils/module';
+@import 'base/module';
+html *{
+	font-family: $font;
+}
+body{
+	width:  $body-width;
+	height: $body-height;
+	background-color: $background-color;
+}
+@import 'layout/module';
+@import 'components/module';  
